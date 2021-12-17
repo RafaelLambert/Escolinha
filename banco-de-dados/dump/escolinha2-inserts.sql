@@ -1,3 +1,4 @@
+
 /*Inserindo uma nova turma.*/
 INSERT INTO turma (nome) VALUES ('Frontend Forsoft Academy 2021.2');
 INSERT INTO turma (nome) VALUES ('Backend Forsoft Academy 2021.2');
