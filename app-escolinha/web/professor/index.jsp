@@ -23,7 +23,7 @@
                         <div class="col-md-12 mt-4 mb-5">
                             <!-- .content -->
                             <div class="jumbotron">
-                                <h1 class="display-4">Ol&aacute;, Aluno!</h1>
+                                <h1 class="display-4">Ol&aacute;, Professor!</h1>
                                 <hr class="my-4">
                                 <p>Bem vindo ao seu painel, ${dados.nomePessoa} ${dados.sobrenomePessoa}!</p>
                             </div>
