@@ -1,5 +1,5 @@
 <%@include file="../componentes/login/header.jspf"%>
-    <script src="../public/assets/js/login/cod-alterar-senha.js" defer></script>
+    <script src="../public/assets/js/cod-alterar-senha.js" defer></script>
 </head>
 
 <body class="content-wrapper " style="background: #fff;">

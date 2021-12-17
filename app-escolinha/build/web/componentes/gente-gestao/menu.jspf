@@ -1,0 +1,161 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="index.jsp" class="brand-link">
+        <!-- <img src="./../public/img/favicon-pc.svg" alt="CIVA Logo" class="brand-image img-circle" style="opacity: .8"> -->
+        <span class="brand-text font-weight-light">ESCOLINHA</span>
+    </a>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <!-- Sidebar user panel (optional) -->
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+            <div class="image">
+                <img src="./../public/img/no-user.svg" class="img-circle elevation-2"
+                     alt="User Image">
+            </div>
+            <div class="info">
+                <span class="d-block text-light text-wrap text-center">${dados.nomePessoa} ${dados.sobrenomePessoa}</span>
+            </div>
+        </div>
+
+
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                data-accordion="false">
+                <!-- ITENS DO MENU -->
+                <li class="nav-item">
+                    <a href="./index.jsp" class="nav-link">
+                        <i class="nav-icon fas fa-home"></i>
+                        <p>Home</p>
+                    </a>
+                </li>
+
+                <!--Turmas-->
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-user-circle"></i>
+                        <p>
+                            Turmas
+                            <i class="right fas fa-angle-left"></i>
+
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="./consultar-turma.jsp" class="nav-link">
+                                <i class="nav-icon fas fa-address-card"></i>
+                                <p>
+                                    Consultar Turmas
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./cadastrar-turma.jsp" class="nav-link">
+                                <i class="nav-icon fas fa-address-card"></i>
+                                <p>
+                                    cadastrar Turmas
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!--alunos-->
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-user-circle"></i>
+                        <p>
+                            Alunos
+                            <i class="right fas fa-angle-left"></i>
+
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="./consultar-aluno.jsp" class="nav-link">
+                                <i class="nav-icon fas fa-address-card"></i>
+                                <p>
+                                    Consultar Alunos
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./cadastrar-aluno.jsp" class="nav-link">
+                                <i class="nav-icon fas fa-address-card"></i>
+                                <p>
+                                    cadastrar Alunos
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                
+                                <!--alunos-->
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-user-circle"></i>
+                        <p>
+                            Professores
+                            <i class="right fas fa-angle-left"></i>
+
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="./consultar-professor.jsp" class="nav-link">
+                                <i class="nav-icon fas fa-address-card"></i>
+                                <p>
+                                    Consultar Professores
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./cadastrar-professor.jsp" class="nav-link">
+                                <i class="nav-icon fas fa-address-card"></i>
+                                <p>
+                                    cadastrar Professores
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                
+                <!-- ITEM PERFIL DO MENU -->
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-user-circle"></i>
+                        <p>
+                            Perfil
+                            <i class="right fas fa-angle-left"></i>
+
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="./meu-perfil.jsp" class="nav-link">
+                                <i class="nav-icon fas fa-address-card"></i>
+                                <p>
+                                    Meus Dados
+                                </p>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a href="../exit" class="nav-link">
+                        <i class="nav-icon fas fa-sign-out-alt"></i>
+                        <p>
+                            Sair
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar ------------------------------------------------------>
+</aside>

@@ -32,6 +32,29 @@
                     </a>
                 </li>
                 
+                <!--Alunos-->
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-user-circle"></i>
+                        <p>
+                            Turmas
+                            <i class="right fas fa-angle-left"></i>
+
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="./consultar-turmas.jsp" class="nav-link">
+                                <i class="nav-icon fas fa-address-card"></i>
+                                <p>
+                                    Consultar Turmas
+                                </p>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+                
                 <!-- ITEM PERFIL DO MENU -->
                 <li class="nav-item">
                     <a href="#" class="nav-link">

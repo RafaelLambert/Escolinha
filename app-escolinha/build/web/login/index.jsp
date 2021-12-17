@@ -7,7 +7,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-    <%@include file="../componentes/login/header.jspf"%>
+    <%@include file="../componentes/header.jspf"%>
     <title>Login</title>
 </head>
 <body>

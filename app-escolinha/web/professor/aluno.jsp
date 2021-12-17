@@ -1,4 +1,4 @@
-<%@include file="../componentes/aluno/header.jspf"%>
+<%@include file="../componentes/header.jspf"%>
     <script src="../public/assets/js/portador-civa/meus-dados.js" defer></script>
 </head>
 
@@ -17,12 +17,12 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1 class="m-0">Meus Dados</h1>
+                            <h1 class="m-0">Meu Perfil</h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item"><a href="" id="go-back">Voltar</a></li>
-                                <li class="breadcrumb-item active">Meus Dados</li>
+                                <li class="breadcrumb-item active">Meu Perfil</li>
                             </ol>
                         </div><!-- /.col -->
                     </div><!-- /.row -->
@@ -41,7 +41,7 @@
 
                             <div class="card card-primary card-outline">
                                 <div class="card-header">
-                                    <h3 class="card-title">Dados Portador CIVA</h3>
+                                    <h3 class="card-title">Aluno</h3>
                                 </div>
                                 <!-- /.card-header -->
                                 <!-- form start -->

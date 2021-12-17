@@ -1,4 +1,4 @@
-<%@include file="../componentes/login/header.jspf"%>
+<%@include file="../componentes/header.jspf"%>
     <script src="../public/assets/js/smtp.js" defer></script>
     <script src="../public/assets/js/login/recuperar-senha.js" defer></script>
     <title>Recuperar Senha</title>

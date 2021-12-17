@@ -8,7 +8,7 @@
         <!-- Navbar --------------------------------------------->
         <%@include file="../componentes/navbar.jspf" %>
         <!-- MENU Main Sidebar Container ------------------------------------>
-        <%@include file="../componentes/aluno/menu.jspf" %>
+        <%@include file="../componentes/gente-gestao/menu.jspf" %>
         <!-- /.menu ------------------------------------------------------->
 
         <!-- Content Wrapper. Contains page content -------------------------->
@@ -31,6 +31,7 @@
                         </div>
                     </div>
 
+                    <!-- /.container-fluid -->
                 </div>
             </div>
         </div>
