@@ -8,7 +8,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class ConnectionFactory {
-    public static final String URL = "jdbc:mysql://localhost:3306/escolinha2";
+    public static final String URL = "jdbc:mysql://localhost:3306/escolinha";
     public static final String USER = "datasoft";
     public static final String PASS = "devdados21";
 

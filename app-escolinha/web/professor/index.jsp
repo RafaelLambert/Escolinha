@@ -1,9 +1,6 @@
 
-<<<<<<< HEAD
 <%@include file="../componentes/header.jspf"%>
-=======
-<%@include file="../componentes/aluno/header.jspf"%>
->>>>>>> f4ba09f2a68c526961eb34f57d7d389a1cd2b658
+
     <title>HOME</title>
 </head>
 
@@ -12,11 +9,9 @@
         <!-- Navbar --------------------------------------------->
         <%@include file="../componentes/navbar.jspf" %>
         <!-- MENU Main Sidebar Container ------------------------------------>
-<<<<<<< HEAD
+
         <%@include file="../componentes/professor/menu.jspf" %>
-=======
-        <%@include file="../componentes/aluno/menu.jspf" %>
->>>>>>> f4ba09f2a68c526961eb34f57d7d389a1cd2b658
+
         <!-- /.menu ------------------------------------------------------->
 
         <!-- Content Wrapper. Contains page content -------------------------->
@@ -31,22 +26,14 @@
                         <div class="col-md-12 mt-4 mb-5">
                             <!-- .content -->
                             <div class="jumbotron">
-<<<<<<< HEAD
-                                <h1 class="display-4">Ol&aacute;</h1>
-                                <hr class="my-4">
-                                <p>Bem vindo ao seu painel</p>
-=======
                                 <h1 class="display-4">Ol&aacute;, Professor!</h1>
                                 <hr class="my-4">
-                                <p>Bem vindo ao seu painel, ${dados.nomePessoa} ${dados.sobrenomePessoa}!</p>
->>>>>>> f4ba09f2a68c526961eb34f57d7d389a1cd2b658
+                                <p>Bem vindo ao seu painel, ${pessoa.nome} ${pessoa.sobrenome}!</p>
                             </div>
                             <!-- /.content -->
                         </div>
                     </div>
-<<<<<<< HEAD
-                    
-=======
+
 
 
                     <div class="row">

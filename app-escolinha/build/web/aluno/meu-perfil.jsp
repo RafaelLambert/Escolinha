@@ -1,5 +1,25 @@
+<%@page import="model.Pessoa"%>
+<%@page import="dao.AlunoDao"%>
+<%
+    Pessoa pessoa = (Pessoa) session.getAttribute("pessoa");
+
+    if ((pessoa == null) || (!pessoa.getCargo().equals("aluno"))) {
+        response.sendRedirect("../login/");
+    }
+
+    try {
+        Pessoa pessoaDados = AlunoDao.findById(pessoa.getIdPessoa());
+        System.err.println(pessoaDados.getCargo());
+        pageContext.setAttribute("pessoaDados", pessoaDados);
+
+    } catch (Exception e) {
+    }
+
+
+%>
+
 <%@include file="../componentes/header.jspf"%>
-    <script src="../public/assets/js/portador-civa/meus-dados.js" defer></script>
+<script src="../public/assets/js/portador-civa/meus-dados.js" defer></script>
 </head>
 
 <body class="hold-transition sidebar-mini">

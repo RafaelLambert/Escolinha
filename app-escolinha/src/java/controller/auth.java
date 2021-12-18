@@ -1,5 +1,6 @@
 package controller;
 
+import dao.LoginDao;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.RequestDispatcher;
@@ -9,7 +10,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-
+import model.Login;
+import model.Pessoa;
 
 /**
  *
@@ -34,15 +36,28 @@ public class auth extends HttpServlet {
             /* TODO output your page here. You may use following sample code. */
  /* String pathApp = request.getContextPath();*/
             RequestDispatcher rd;
-
-            /* Pegando as informações de loginAcesso
-            Login loginAcesso = new Login();
-            loginAcesso.setPerfil(request.getParameter("perfil"));
-            loginAcesso.setEmail(request.getParameter("email"));
-            loginAcesso.setSenha(request.getParameter("senha"));
-            loginAcesso.setCodigoCiva(request.getParameter("civa"));
-
             HttpSession session = request.getSession();
+
+            Login loginAcesso = new Login();
+
+            loginAcesso.setCargo(request.getParameter("cargo"));
+            loginAcesso.setEmail(request.getParameter("email"));            
+            loginAcesso.setSenha(request.getParameter("senha"));
+            
+            Pessoa pessoa = LoginDao.validar(loginAcesso);
+            
+            if (pessoa != null) {                                                              
+                session.setAttribute("pessoa", pessoa);
+                session.setMaxInactiveInterval(60 * 90);
+                response.sendRedirect(loginAcesso.getCargo() + "/");
+
+            } else {
+                // Login errado
+                response.sendRedirect("login/");
+            }
+            
+                        
+            /* Pegando as informações de loginAcesso              
             // Fazer o devido redirecionamento
             // Para a página do ator adequado
             // Sempre redirecionar para o index.jsp
@@ -59,7 +74,6 @@ public class auth extends HttpServlet {
                 // Login errado
                 response.sendRedirect("login/");
             }*/
-
         }
     }
 
